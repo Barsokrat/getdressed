@@ -443,9 +443,10 @@ export default function HomePage() {
 
         {/* Social proof */}
         <div className="text-center">
-          <p className="text-gray-500 text-sm">
+          <p className="text-gray-500 text-sm mb-4">
             Built with ❤️ in Abu Dhabi • Works across all UAE
           </p>
+          <img src="/logo.jpeg" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto border-2 border-white" />
         </div>
       </div>
     </div>
