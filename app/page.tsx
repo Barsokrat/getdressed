@@ -23,6 +23,7 @@ export default function HomePage() {
       <div className="relative max-w-4xl mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-20">
+          <img src="/gd-logo.png" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto" />
           <div className="inline-block bg-black text-white px-3 py-1 text-xs uppercase tracking-widest mb-6">
             Beta Launch October 2025
           </div>
@@ -446,7 +447,6 @@ export default function HomePage() {
           <p className="text-gray-500 text-sm mb-4">
             Built with ❤️ in Abu Dhabi • Works across all UAE
           </p>
-          <img src="/logo.jpeg" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto border-2 border-white" />
         </div>
       </div>
     </div>
