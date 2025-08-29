@@ -123,54 +123,51 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-2 mb-3">
                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
                     <div className="aspect-square bg-white rounded overflow-hidden mb-1">
-                      {/* Вариант 1: URL изображения */}
                       <img 
-                        src="https://i.imgur.com/mDLSVA0.jpeg" 
-                        alt="White Shirt"
+                        src="/mockup/cream_silk_blouse.jpeg" 
+                        alt="Cream Silk Blouse"
                         className="w-full h-full object-cover"
                       />
-                      {/* Вариант 2: Если нет интернета, используй base64 или emoji */}
-                      {/* <div className="w-full h-full flex items-center justify-center text-4xl bg-blue-50">👔</div> */}
                     </div>
-                    <p className="text-[10px] text-center text-gray-700 font-medium">White Oxford</p>
+                    <p className="text-[10px] text-center text-gray-700 font-medium">Cream Blouse</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
                     <div className="aspect-square bg-white rounded overflow-hidden mb-1">
                       <img 
-                        src="https://i.imgur.com/Nad0GYN.jpeg" 
-                        alt="Navy Chinos"
+                        src="/mockup/camel_wide-leg_trousers.jpeg" 
+                        alt="Camel Trousers"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-[10px] text-center text-gray-700 font-medium">Navy Chinos</p>
+                    <p className="text-[10px] text-center text-gray-700 font-medium">Camel Trousers</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
                     <div className="aspect-square bg-white rounded overflow-hidden mb-1">
                       <img 
-                        src="https://i.imgur.com/9xKTy6y.jpeg" 
-                        alt="Brown Loafers"
+                        src="/mockup/beige_pumps.jpeg" 
+                        alt="Beige Pumps"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-[10px] text-center text-gray-700 font-medium">Brown Loafers</p>
+                    <p className="text-[10px] text-center text-gray-700 font-medium">Beige Pumps</p>
                   </div>
                   <div className="bg-gray-50 rounded-lg p-3 border border-gray-100">
                     <div className="aspect-square bg-white rounded overflow-hidden mb-1">
                       <img 
-                        src="https://i.imgur.com/7yhCl26.jpeg" 
-                        alt="Watch"
+                        src="/mockup/black_tote_bag.jpeg" 
+                        alt="Black Tote Bag"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <p className="text-[10px] text-center text-gray-700 font-medium">Silver Watch</p>
+                    <p className="text-[10px] text-center text-gray-700 font-medium">Black Tote</p>
                   </div>
                 </div>
                 
                 {/* Описание - уменьшено */}
                 <div className="mb-3">
-                  <h3 className="font-bold text-base mb-1 text-black">Executive Ready</h3>
+                  <h3 className="font-bold text-base mb-1 text-black">Elegant & Professional</h3>
                   <p className="text-xs text-gray-600">
-                    Perfect for office meetings and DIFC lunch
+                    Perfect for office meetings and upscale events
                   </p>
                 </div>
                 
