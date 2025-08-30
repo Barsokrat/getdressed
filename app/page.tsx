@@ -9,7 +9,15 @@ export default function HomePage() {
     <div className="min-h-screen relative">
       {/* Фон - размытые вешалки с одеждой */}
       <div 
-        className="fixed inset-0 opacity-20"
+        className="fixed inset-0 opacity-60 dark:opacity-0"
+        style={{
+          backgroundImage: 'linear-gradient(45deg, #ddc4c9 25%, transparent 25%, transparent 75%, #ddc4c9 75%, #ddc4c9), linear-gradient(45deg, #ddc4c9 25%, transparent 25%, transparent 75%, #ddc4c9 75%, #ddc4c9)',
+          backgroundSize: '20px 20px',
+          backgroundPosition: '0 0, 10px 10px'
+        }}
+      />
+      <div 
+        className="fixed inset-0 opacity-0 dark:opacity-10"
         style={{
           backgroundImage: 'linear-gradient(45deg, #f3e7e9 25%, transparent 25%, transparent 75%, #f3e7e9 75%, #f3e7e9), linear-gradient(45deg, #f3e7e9 25%, transparent 25%, transparent 75%, #f3e7e9 75%, #f3e7e9)',
           backgroundSize: '20px 20px',
