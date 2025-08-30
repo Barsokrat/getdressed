@@ -248,12 +248,9 @@ export default function HomePage() {
   </div>
   
   {/* Caption */}
-  <div className="text-center mt-6">
+  <div className="text-center mt-5">
     <p className="text-sm text-gray-700 font-medium">
       Swipe right to wear, left for next option
-    </p>
-    <p className="text-xs text-gray-500 mt-1">
-      Launching October 2025
     </p>
   </div>
 </div>
@@ -311,7 +308,7 @@ export default function HomePage() {
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-black text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm">
                     3
                   </div>
-                  <div className="text-4xl mb-3">👕</div>
+                  <div className="text-4xl mb-3">👔</div>
                   <h3 className="font-bold text-lg mb-2 text-gray-900">Get Outfits</h3>
                   <div className="space-y-1 text-sm text-gray-600">
                     <p>• 3 curated options daily</p>
@@ -410,7 +407,7 @@ export default function HomePage() {
         {/* Features улучшенные */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           <div className="bg-white p-6 border-2 border-gray-200 hover:border-black transition group">
-            <div className="text-4xl mb-3">👔</div>
+            <div className="text-4xl mb-3">✨</div>
             <h3 className="font-bold text-xl mb-2 text-gray-900 group-hover:text-black">
               Smart Wardrobe
             </h3>
@@ -439,12 +436,29 @@ export default function HomePage() {
         </div>
 
         {/* НОВОЕ: Социальное доказательство */}
-        <div className="text-center mb-16 p-6 bg-gray-50 rounded-lg">
-          <p className="text-sm text-gray-600 mb-2">What early testers say:</p>
-          <p className="italic text-gray-800">
-            &quot;Finally someone understands the Abu Dhabi office to mall struggle!&quot;
-          </p>
-          <p className="text-sm text-gray-500 mt-2">- Sarah K., ADNOC employee</p>
+        <div className="text-center mb-16 space-y-6">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">What early testers say:</h3>
+          
+          <div className="p-6 bg-orange-50 rounded-lg">
+            <p className="italic text-gray-800">
+              &quot;Finally someone understands the Abu Dhabi office to mall struggle!&quot;
+            </p>
+            <p className="text-sm text-gray-500 mt-2">- Sarah K., ADNOC employee</p>
+          </div>
+          
+          <div className="p-6 bg-blue-50 rounded-lg">
+            <p className="italic text-gray-800">
+              &quot;Saves me 20 minutes every morning&quot;
+            </p>
+            <p className="text-sm text-gray-500 mt-2">- Jessica L., ADGM Finance</p>
+          </div>
+          
+          <div className="p-6 bg-green-50 rounded-lg">
+            <p className="italic text-gray-800">
+              &quot;No more freezing in malls after being outside in 45°C heat!&quot;
+            </p>
+            <p className="text-sm text-gray-500 mt-2">- Amira H., Emirates NBD</p>
+          </div>
         </div>
 
         {/* Social proof */}
@@ -452,6 +466,42 @@ export default function HomePage() {
           <p className="text-gray-500 text-sm mb-4">
             Built with ❤️ in Abu Dhabi • Works across all UAE
           </p>
+          
+          {/* Social Links */}
+          <div className="flex justify-center gap-4 mt-6">
+            <a 
+              href="https://www.instagram.com/getdressed_ae/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-pink-600 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.2c3.2 0 3.6.013 4.85.07 1.17.055 1.805.249 2.227.415.56.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.058 1.248.07 1.645.07 4.85s-.012 3.6-.07 4.85c-.053 1.17-.249 1.805-.413 2.227-.217.56-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.25.058-1.645.07-4.85.07s-3.6-.012-4.85-.07c-1.17-.053-1.805-.249-2.227-.413-.56-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227C2.213 15.6 2.2 15.2 2.2 12s.013-3.6.07-4.85c.055-1.17.249-1.805.415-2.227.217-.56.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413C8.4 2.213 8.8 2.2 12 2.2M12 0C8.741 0 8.332.014 7.052.072 5.775.13 4.903.333 4.14.63c-.789.306-1.459.717-2.126 1.384C1.347 2.681.936 3.351.63 4.14.333 4.903.13 5.775.072 7.052.014 8.332 0 8.741 0 12s.014 3.668.072 4.948c.058 1.277.261 2.149.558 2.912.306.789.717 1.459 1.384 2.126.667.667 1.337 1.078 2.126 1.384.763.297 1.635.5 2.912.558C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.277-.058 2.149-.261 2.912-.558.789-.306 1.459-.717 2.126-1.384.667-.667 1.078-1.337 1.384-2.126.297-.763.5-1.635.558-2.912C23.986 15.668 24 15.259 24 12s-.014-3.668-.072-4.948c-.058-1.277-.261-2.149-.558-2.912-.306-.789-.717-1.459-1.384-2.126C20.319 1.347 19.649.936 18.86.63 18.097.333 17.225.13 15.948.072 14.668.014 14.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            
+            <a 
+              href="https://www.facebook.com/getdressed.ae" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-blue-600 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            
+            <a 
+              href="https://wa.me/+971558245768?text=Hi%2C%20I%20want%20to%20join%20the%20waitlist%20for%20the%20GetDressed%20app.%20Can%20you%20tell%20me%20more%3F" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-green-600 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>

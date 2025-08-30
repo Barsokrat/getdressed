@@ -72,7 +72,7 @@ export default function WaitlistForm({ onSuccess }: WaitlistFormProps) {
       <button 
         type="submit"
         disabled={status === 'loading'}
-        className="bg-black text-white px-8 py-4 text-lg font-bold hover:bg-gray-900 disabled:opacity-50 transition uppercase tracking-wide"
+        className="bg-black text-white px-8 py-4 text-lg font-bold hover:bg-gray-800 disabled:opacity-50 transition-colors duration-200 uppercase tracking-wide"
       >
         {status === 'loading' ? 'JOINING...' : 'GET ACCESS'}
       </button>

@@ -47,7 +47,7 @@ export default function QuickPoll() {
 
   return (
     <div className="bg-white/80 backdrop-blur p-6 rounded-lg mb-12 text-center text-black">
-      <p className="font-bold text-black mb-3">
+      <p className="font-bold text-black mb-4 text-xl">
         {selected 
           ? "Thanks! We'll focus on this in your experience 👍" 
           : "Quick question: What's your biggest outfit challenge?"
