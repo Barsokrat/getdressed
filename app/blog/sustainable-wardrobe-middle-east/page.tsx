@@ -49,7 +49,7 @@ export default function SustainableWardrobePage() {
           </h1>
           
           <p className="text-xl text-gray-700 leading-relaxed">
-            Quality over quantity: Creating a capsule wardrobe that works in Dubai's climate while respecting local culture and environmental impact.
+            Quality over quantity: Creating a capsule wardrobe that works in Dubai&apos;s climate while respecting local culture and environmental impact.
           </p>
         </div>
 
@@ -57,12 +57,12 @@ export default function SustainableWardrobePage() {
         <article className="bg-white/90 backdrop-blur rounded-lg p-8 shadow-lg prose prose-lg max-w-none">
           <h2>Why Sustainability Matters in the UAE</h2>
           <p>
-            The UAE's fashion consumption is among the world's highest per capita, driven by tax-free shopping, international brands, and social expectations. But the extreme climate means clothes wear out faster, creating even more waste. Building a sustainable wardrobe here isn't just good for the planet—it's economically smart and socially responsible.
+            The UAE&apos;s fashion consumption is among the world&apos;s highest per capita, driven by tax-free shopping, international brands, and social expectations. But the extreme climate means clothes wear out faster, creating even more waste. Building a sustainable wardrobe here isn&apos;t just good for the planet—it&apos;s economically smart and socially responsible.
           </p>
 
           <h2>The Middle East Climate Reality</h2>
           <p>
-            <strong>The Challenge:</strong> UV exposure, humidity, sand, and extreme temperatures destroy fabrics faster than moderate climates. Fast fashion simply can't survive, making quality investment pieces the only logical choice.
+            <strong>The Challenge:</strong> UV exposure, humidity, sand, and extreme temperatures destroy fabrics faster than moderate climates. Fast fashion simply can&apos;t survive, making quality investment pieces the only logical choice.
           </p>
           
           <p>
@@ -94,7 +94,7 @@ export default function SustainableWardrobePage() {
           
           <h3>The 30-Wear Rule</h3>
           <p>
-            Before buying anything, ask: "Will I wear this 30 times in the next year?" If not, don't buy it. In UAE's climate, this rule becomes even more critical.
+            Before buying anything, ask: &quot;Will I wear this 30 times in the next year?&quot; If not, don&apos;t buy it. In UAE&apos;s climate, this rule becomes even more critical.
           </p>
 
           <h3>Cost-Per-Wear Calculation</h3>
@@ -123,7 +123,7 @@ export default function SustainableWardrobePage() {
           <h3>Fabric Care in Extreme Heat</h3>
           <ul>
             <li><strong>Air dry in shade:</strong> UAE sun will fade and damage fabrics</li>
-            <li><strong>Rotate frequently:</strong> Don't wear same piece two days running</li>
+            <li><strong>Rotate frequently:</strong> Don&apos;t wear same piece two days running</li>
             <li><strong>Professional cleaning:</strong> Invest in quality dry cleaning to extend life</li>
             <li><strong>Storage:</strong> Cedar blocks and proper hangers prevent damage</li>
           </ul>
@@ -152,7 +152,7 @@ export default function SustainableWardrobePage() {
           
           <h3>Modest Fashion Advantage</h3>
           <p>
-            UAE's modest fashion requirements actually support sustainability:
+            UAE&apos;s modest fashion requirements actually support sustainability:
           </p>
           <ul>
             <li>Longer hemlines and sleeves use more fabric, creating substantial pieces</li>
@@ -184,12 +184,12 @@ export default function SustainableWardrobePage() {
           <p>Add pieces that work with your foundation: camel trousers, silk blouse, cardigan.</p>
           
           <h3>Month 4-6: Seasonal Adaptations</h3>
-          <p>Add pieces for UAE's two seasons: linen for extreme heat, light layers for winter.</p>
+          <p>Add pieces for UAE&apos;s two seasons: linen for extreme heat, light layers for winter.</p>
 
           <div className="bg-emerald-50 border-l-4 border-emerald-400 p-4 my-8">
             <p className="font-semibold mb-2">🌱 Sustainability Tip</p>
             <p className="text-sm">
-              Calculate water usage: A single cotton t-shirt uses 2,700 liters of water to produce. Every piece you don't buy saves significant resources.
+              Calculate water usage: A single cotton t-shirt uses 2,700 liters of water to produce. Every piece you don&apos;t buy saves significant resources.
             </p>
           </div>
 
@@ -199,7 +199,7 @@ export default function SustainableWardrobePage() {
             <li><strong>Cost per wear</strong> of each piece</li>
             <li><strong>Outfit creation</strong> from existing pieces vs. new purchases</li>
             <li><strong>Seasonal versatility</strong> of each item</li>
-            <li><strong>Longevity</strong> in UAE's harsh climate</li>
+            <li><strong>Longevity</strong> in UAE&apos;s harsh climate</li>
           </ul>
         </article>
 

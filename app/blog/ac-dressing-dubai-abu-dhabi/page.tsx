@@ -57,7 +57,7 @@ export default function ACDressingPage() {
         <article className="bg-white/90 backdrop-blur rounded-lg p-8 shadow-lg prose prose-lg max-w-none">
           <h2>The UAE Temperature Challenge</h2>
           <p>
-            Living in the UAE means navigating one of the world's most extreme temperature differentials. Step outside: 45°C+ humidity. Walk into Dubai Mall: 18°C arctic blast. This daily thermal shock requires a strategic approach to dressing that most fashion advice completely ignores.
+            Living in the UAE means navigating one of the world&apos;s most extreme temperature differentials. Step outside: 45°C+ humidity. Walk into Dubai Mall: 18°C arctic blast. This daily thermal shock requires a strategic approach to dressing that most fashion advice completely ignores.
           </p>
 
           <h2>The Science of Layering</h2>
@@ -130,7 +130,7 @@ export default function ACDressingPage() {
           </ul>
 
           <h2>The AC Survival Kit</h2>
-          <p>Every UAE resident needs an "indoor survival kit":</p>
+          <p>Every UAE resident needs an &quot;indoor survival kit&quot;:</p>
           <ul>
             <li><strong>Desk drawer:</strong> Lightweight cardigan or pashmina</li>
             <li><strong>Car:</strong> Blazer or jacket for unexpected stops</li>

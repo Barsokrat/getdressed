@@ -55,9 +55,9 @@ export default function OfficeDressCodesUAEPage() {
 
         {/* Article content */}
         <article className="bg-white/90 backdrop-blur rounded-lg p-8 shadow-lg prose prose-lg max-w-none">
-          <h2>Understanding UAE's Professional Environment</h2>
+          <h2>Understanding UAE&apos;s Professional Environment</h2>
           <p>
-            The UAE's business environment is uniquely cosmopolitan, blending traditional values with international standards. Whether you're working in Abu Dhabi's government sector, Dubai's financial district, or Sharjah's industrial zones, understanding the nuances of professional dress codes is crucial for career success.
+            The UAE&apos;s business environment is uniquely cosmopolitan, blending traditional values with international standards. Whether you&apos;re working in Abu Dhabi&apos;s government sector, Dubai&apos;s financial district, or Sharjah&apos;s industrial zones, understanding the nuances of professional dress codes is crucial for career success.
           </p>
 
           <h2>Government Sector Guidelines</h2>
@@ -99,7 +99,7 @@ export default function OfficeDressCodesUAEPage() {
 
           <h3>Tech & Startups</h3>
           <p>
-            Dubai Internet City and Abu Dhabi's tech hubs are more flexible, but client-facing roles still require polished business casual.
+            Dubai Internet City and Abu Dhabi&apos;s tech hubs are more flexible, but client-facing roles still require polished business casual.
           </p>
 
           <h2>Seasonal Adjustments</h2>
@@ -136,7 +136,7 @@ export default function OfficeDressCodesUAEPage() {
         {/* CTA */}
         <div className="mt-16 text-center bg-black text-white p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4">Never Guess Your Outfit Again</h3>
-          <p className="mb-6">GetDressed AI understands UAE's unique professional requirements and climate challenges.</p>
+          <p className="mb-6">GetDressed AI understands UAE&apos;s unique professional requirements and climate challenges.</p>
           <Link 
             href="/"
             className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
