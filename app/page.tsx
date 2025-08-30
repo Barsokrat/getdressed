@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import WaitlistForm from './components/WaitlistForm'
 import WaitlistCounter from './components/WaitlistCounter'
 import QuickPoll from './components/QuickPoll'
+import ScrollToTop from './components/ScrollToTop'
 import { WaitlistProvider } from './context/WaitlistContext'
 
 export default function HomePage() {
@@ -31,7 +33,9 @@ export default function HomePage() {
       <div className="relative max-w-4xl mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-20">
-          <img src="/gd-logo.png" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto" />
+          <Link href="/">
+            <img src="/gd-logo.png" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto" />
+          </Link>
           <div className="inline-block bg-black text-white px-3 py-1 text-xs uppercase tracking-widest mb-6">
             Beta Launch October 2025
           </div>
@@ -467,6 +471,19 @@ export default function HomePage() {
             Built with ❤️ in Abu Dhabi • Works across all UAE
           </p>
           
+          {/* Blog Link */}
+          <div className="mb-6">
+            <Link 
+              href="/blog"
+              className="inline-flex items-center text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+              Style Blog
+            </Link>
+          </div>
+          
           {/* Social Links */}
           <div className="flex justify-center gap-4 mt-6">
             <a 
@@ -504,6 +521,7 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <ScrollToTop />
     </div>
     </WaitlistProvider>
   )
