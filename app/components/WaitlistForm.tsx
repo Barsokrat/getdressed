@@ -35,6 +35,19 @@ export default function WaitlistForm({ onSuccess }: WaitlistFormProps) {
         }
         setStatus('idle')
       } else {
+        // Отправляем welcome письмо
+        try {
+          await fetch('/api/send-welcome-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email })
+          })
+        } catch (emailError) {
+          console.warn('Failed to send welcome email:', emailError)
+        }
+        
         decreaseSpots()
         setStatus('success')
         onSuccess?.()
@@ -72,7 +85,7 @@ export default function WaitlistForm({ onSuccess }: WaitlistFormProps) {
       <button 
         type="submit"
         disabled={status === 'loading'}
-        className="bg-black text-white px-8 py-4 text-lg font-bold hover:bg-gray-800 disabled:opacity-50 transition-colors duration-200 uppercase tracking-wide"
+        className="bg-black text-white px-8 py-4 text-lg font-bold hover:bg-yellow-400 disabled:opacity-50 transition-colors duration-200 uppercase tracking-wide"
       >
         {status === 'loading' ? 'JOINING...' : 'GET ACCESS'}
       </button>

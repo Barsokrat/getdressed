@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import ScrollToTop from '../../components/ScrollToTop'
+import NewsletterPopup from '../../components/NewsletterPopup'
+import { useNewsletterPopup } from '../../hooks/useNewsletterPopup'
 
 export default function OfficeDressCodesUAEPage() {
+  const { isOpen, openPopup, closePopup } = useNewsletterPopup()
   return (
     <div className="min-h-screen relative">
       {/* Background pattern */}
@@ -48,7 +53,7 @@ export default function OfficeDressCodesUAEPage() {
             Office Dress Codes in UAE: A Complete Guide for 2025
           </h1>
           
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl text-gray-900 leading-relaxed">
             Navigate the professional landscape with confidence. From government offices to international corporations, understand what to wear where.
           </p>
         </div>
@@ -137,15 +142,16 @@ export default function OfficeDressCodesUAEPage() {
         <div className="mt-16 text-center bg-black text-white p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4">Never Guess Your Outfit Again</h3>
           <p className="mb-6">GetDressed AI understands UAE&apos;s unique professional requirements and climate challenges.</p>
-          <Link 
-            href="/"
-            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
+          <button 
+            onClick={openPopup}
+            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-yellow-400 hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
             Join the Waitlist
-          </Link>
+          </button>
         </div>
       </div>
       <ScrollToTop />
+      <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
     </div>
   )
 }

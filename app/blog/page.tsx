@@ -4,6 +4,14 @@ import ScrollToTop from '../components/ScrollToTop'
 export default function BlogPage() {
   const posts = [
     {
+      slug: 'getdressed-vs-competitors-ai-wardrobe-management-uae',
+      title: 'GetDressed vs. Competitors: The Ultimate AI Wardrobe Management Comparison',
+      excerpt: 'How GetDressed stacks up against Whering, Stylebook, and other AI styling apps in the competitive UAE fashion tech market.',
+      date: 'August 30, 2025',
+      readTime: '8 min read',
+      category: 'Tech Comparison'
+    },
+    {
       slug: 'office-dress-codes-uae',
       title: 'Office Dress Codes in UAE: A Complete Guide for 2025',
       excerpt: 'Navigate the professional landscape with confidence. From government offices to international corporations, understand what to wear where.',
@@ -61,7 +69,7 @@ export default function BlogPage() {
           <h1 className="text-5xl font-black text-gray-900 mb-4">
             Style Blog
           </h1>
-          <p className="text-xl text-gray-700">
+          <p className="text-xl text-gray-900">
             Fashion insights for the modern UAE professional
           </p>
         </div>
@@ -85,7 +93,7 @@ export default function BlogPage() {
                 </h2>
               </Link>
               
-              <p className="text-gray-700 mb-4 leading-relaxed">
+              <p className="text-gray-900 mb-4 leading-relaxed">
                 {post.excerpt}
               </p>
               

@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import ScrollToTop from '../../components/ScrollToTop'
+import NewsletterPopup from '../../components/NewsletterPopup'
+import { useNewsletterPopup } from '../../hooks/useNewsletterPopup'
 
 export default function SustainableWardrobePage() {
+  const { isOpen, openPopup, closePopup } = useNewsletterPopup()
   return (
     <div className="min-h-screen relative">
       {/* Background pattern */}
@@ -48,7 +53,7 @@ export default function SustainableWardrobePage() {
             Building a Sustainable Wardrobe in the Middle East
           </h1>
           
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl text-gray-900 leading-relaxed">
             Quality over quantity: Creating a capsule wardrobe that works in Dubai&apos;s climate while respecting local culture and environmental impact.
           </p>
         </div>
@@ -207,15 +212,16 @@ export default function SustainableWardrobePage() {
         <div className="mt-16 text-center bg-black text-white p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4">Maximize Your Wardrobe Investment</h3>
           <p className="mb-6">GetDressed AI helps you create more outfits from fewer pieces, supporting both sustainability and style goals.</p>
-          <Link 
-            href="/"
-            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
+          <button 
+            onClick={openPopup}
+            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-yellow-400 hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
             Build Smart Wardrobes
-          </Link>
+          </button>
         </div>
       </div>
       <ScrollToTop />
+      <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
     </div>
   )
 }

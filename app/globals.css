@@ -24,3 +24,90 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Принудительные цвета для тёмной темы браузера */
+@media (prefers-color-scheme: dark) {
+  .text-gray-900 {
+    color: #111827 !important;
+  }
+  .text-gray-700 {
+    color: #374151 !important;
+  }
+  .text-gray-600 {
+    color: #4b5563 !important;
+  }
+  .text-gray-500 {
+    color: #000000 !important;
+  }
+  
+  /* Принудительно белый фон для статей */
+  .prose {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+}
+
+/* Улучшенное форматирование статей */
+.prose {
+  line-height: 1.7 !important;
+}
+
+.prose h2 {
+  font-size: 1.75rem !important;
+  font-weight: 800 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.25rem !important;
+  color: #000000 !important;
+  border-bottom: 2px solid #e5e7eb !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.prose h3 {
+  font-size: 1.375rem !important;
+  font-weight: 700 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  color: #111827 !important;
+}
+
+.prose p {
+  margin-bottom: 1.25rem !important;
+  color: #374151 !important;
+}
+
+.prose ul {
+  margin-bottom: 1.25rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.prose li {
+  margin-bottom: 0.5rem !important;
+  color: #4b5563 !important;
+}
+
+.prose strong {
+  font-weight: 600 !important;
+  color: #111827 !important;
+}
+
+.prose table {
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.prose th {
+  background-color: #f9fafb !important;
+  font-weight: 700 !important;
+  color: #111827 !important;
+  padding: 0.75rem !important;
+  border: 1px solid #d1d5db !important;
+}
+
+.prose td {
+  color: #111827 !important;
+  padding: 0.75rem !important;
+  border: 1px solid #d1d5db !important;
+}
+
+.prose tbody tr:nth-child(even) {
+  background-color: #f9fafb !important;
+}

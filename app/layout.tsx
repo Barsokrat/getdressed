@@ -15,6 +15,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GetDressed - AI Personal Styling",
   description: "AI-powered personal styling app for the UAE. Get outfit recommendations in 3 seconds.",
+  keywords: "AI styling, UAE fashion, wardrobe management, personal stylist, Dubai fashion, Abu Dhabi style, outfit recommendations",
+  authors: [{ name: "GetDressed Team" }],
+  openGraph: {
+    title: "GetDressed - AI Personal Styling for UAE",
+    description: "Transform your wardrobe with AI-powered styling specifically designed for UAE lifestyle and climate",
+    type: "website",
+    locale: "en_US",
+    siteName: "GetDressed",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GetDressed - AI Personal Styling for UAE",
+    description: "Transform your wardrobe with AI-powered styling specifically designed for UAE lifestyle and climate",
+  },
   icons: {
     icon: [
       { url: '/favicon/favicon.ico' },

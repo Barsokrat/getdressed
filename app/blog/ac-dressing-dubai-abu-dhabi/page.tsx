@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import ScrollToTop from '../../components/ScrollToTop'
+import NewsletterPopup from '../../components/NewsletterPopup'
+import { useNewsletterPopup } from '../../hooks/useNewsletterPopup'
 
 export default function ACDressingPage() {
+  const { isOpen, openPopup, closePopup } = useNewsletterPopup()
   return (
     <div className="min-h-screen relative">
       {/* Background pattern */}
@@ -48,7 +53,7 @@ export default function ACDressingPage() {
             Mastering AC Dressing: From 45°C Streets to 18°C Malls
           </h1>
           
-          <p className="text-xl text-gray-700 leading-relaxed">
+          <p className="text-xl text-gray-900 leading-relaxed">
             The ultimate guide to layering in the UAE. How to stay comfortable transitioning between extreme outdoor heat and freezing indoor AC.
           </p>
         </div>
@@ -176,15 +181,16 @@ export default function ACDressingPage() {
         <div className="mt-16 text-center bg-black text-white p-8 rounded-lg">
           <h3 className="text-2xl font-bold mb-4">AI That Understands UAE Weather</h3>
           <p className="mb-6">GetDressed considers temperature transitions, humidity levels, and your daily schedule to recommend the perfect layers.</p>
-          <Link 
-            href="/"
-            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-gray-100 transition-colors"
+          <button 
+            onClick={openPopup}
+            className="inline-block bg-white text-black px-8 py-3 font-bold hover:bg-yellow-400 hover:shadow-lg hover:scale-105 transition-all duration-200"
           >
             Get Early Access
-          </Link>
+          </button>
         </div>
       </div>
       <ScrollToTop />
+      <NewsletterPopup isOpen={isOpen} onClose={closePopup} />
     </div>
   )
 }

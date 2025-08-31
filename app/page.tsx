@@ -37,7 +37,7 @@ export default function HomePage() {
             <img src="/gd-logo.png" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto" />
           </Link>
           <div className="inline-block bg-black text-white px-3 py-1 text-xs uppercase tracking-widest mb-6">
-            Beta Launch October 2025
+            Beta Testing Starts September 2025
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-gray-900 mb-4">
             get<span className="italic font-light">dressed</span>
@@ -470,6 +470,19 @@ export default function HomePage() {
           <p className="text-gray-500 text-sm mb-4">
             Built with ❤️ in Abu Dhabi • Works across all UAE
           </p>
+          
+          {/* Contact Email */}
+          <div className="mb-4">
+            <a 
+              href="mailto:info@getdressed.ae"
+              className="inline-flex items-center text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              info@getdressed.ae
+            </a>
+          </div>
           
           {/* Blog Link */}
           <div className="mb-6">
