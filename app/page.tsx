@@ -1,11 +1,28 @@
+'use client'
+
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import WaitlistForm from './components/WaitlistForm'
 import WaitlistCounter from './components/WaitlistCounter'
 import QuickPoll from './components/QuickPoll'
 import ScrollToTop from './components/ScrollToTop'
+import NewsletterPopup from './components/NewsletterPopup'
 import { WaitlistProvider } from './context/WaitlistContext'
 
 export default function HomePage() {
+  const [showPopup, setShowPopup] = useState(false)
+
+  useEffect(() => {
+    // Показать поп-ап через 30 секунд нахождения на сайте
+    const timer = setTimeout(() => {
+      if (!showPopup) {
+        setShowPopup(true)
+      }
+    }, 30000) // 30 секунд
+
+    return () => clearTimeout(timer)
+  }, [showPopup])
+
   return (
     <WaitlistProvider>
     <div className="min-h-screen relative">
@@ -535,6 +552,12 @@ export default function HomePage() {
         </div>
       </div>
       <ScrollToTop />
+      
+      {/* Newsletter Popup - автопоказ через 30 секунд */}
+      <NewsletterPopup 
+        isOpen={showPopup} 
+        onClose={() => setShowPopup(false)} 
+      />
     </div>
     </WaitlistProvider>
   )
