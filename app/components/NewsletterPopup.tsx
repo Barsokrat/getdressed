@@ -168,7 +168,7 @@ export default function NewsletterPopup({ isOpen, onClose }: NewsletterPopupProp
                 Welcome to the Waitlist!
               </h3>
               <p className="text-gray-600">
-                You'll be notified when GetDressed launches in November 2025.
+                You&apos;ll be notified when GetDressed launches in November 2025.
               </p>
             </div>
           )}
