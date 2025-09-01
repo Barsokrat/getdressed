@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Sitemap - GetDressed',
@@ -33,34 +34,34 @@ export default function SitemapPage() {
             <h2 className="text-xl font-semibold mb-4">Available Pages:</h2>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
                   🏠 Homepage - getdressed.ae
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="text-blue-600 hover:text-blue-800 font-medium">
+                <Link href="/blog" className="text-blue-600 hover:text-blue-800 font-medium">
                   📝 Blog - getdressed.ae/blog
-                </a>
+                </Link>
               </li>
               <li className="ml-6">
-                <a href="/blog/getdressed-vs-competitors-ai-wardrobe-management-uae" className="text-blue-600 hover:text-blue-800">
+                <Link href="/blog/getdressed-vs-competitors-ai-wardrobe-management-uae" className="text-blue-600 hover:text-blue-800">
                   GetDressed vs Competitors: AI Wardrobe Management in UAE
-                </a>
+                </Link>
               </li>
               <li className="ml-6">
-                <a href="/blog/ac-dressing-dubai-abu-dhabi" className="text-blue-600 hover:text-blue-800">
+                <Link href="/blog/ac-dressing-dubai-abu-dhabi" className="text-blue-600 hover:text-blue-800">
                   AC Dressing in Dubai and Abu Dhabi
-                </a>
+                </Link>
               </li>
               <li className="ml-6">
-                <a href="/blog/office-dress-codes-uae" className="text-blue-600 hover:text-blue-800">
+                <Link href="/blog/office-dress-codes-uae" className="text-blue-600 hover:text-blue-800">
                   Office Dress Codes in UAE
-                </a>
+                </Link>
               </li>
               <li className="ml-6">
-                <a href="/blog/sustainable-wardrobe-middle-east" className="text-blue-600 hover:text-blue-800">
+                <Link href="/blog/sustainable-wardrobe-middle-east" className="text-blue-600 hover:text-blue-800">
                   Sustainable Wardrobe in Middle East
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
