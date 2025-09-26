@@ -54,7 +54,7 @@ export default function HomePage() {
             <img src="/gd-logo.png" alt="GetDressed Logo" className="w-26 h-26 object-contain mx-auto" />
           </Link>
           <div className="inline-block bg-black text-white px-3 py-1 text-xs uppercase tracking-widest mb-6">
-            Launch November 2025
+            Beta Testing Starts November 2025
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-gray-900 mb-4">
             get<span className="italic font-light">dressed</span>
