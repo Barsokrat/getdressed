@@ -146,7 +146,7 @@ function getWelcomeEmailHTML() {
         <div class="logo">
             <img src="https://i.imgur.com/ginK1JM.png" alt="GetDressed Logo" class="logo-icon">
             <h1>get<span>dressed</span></h1>
-            <div class="badge">Beta Testing September 2025</div>
+            <div class="badge">Launch November 2025</div>
         </div>
         
         <h2>🎉 Welcome to the GetDressed Waitlist!</h2>
