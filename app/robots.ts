@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://getdressed.ae/sitemap.xml',
+    sitemap: 'https://getdressed.ae/site-map.xml',
   }
 }
